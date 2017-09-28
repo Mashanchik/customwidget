@@ -1,0 +1,10 @@
+<?php
+/**
+ * @var Encomage_Customwidget_Block_Lowestproducts
+ */
+?>
+<div>
+     <?php foreach ($this->getProductCollection() as $product):?>
+            <?php echo $product->getName() . ' - ' . Mage::helper('core')->currency($product->getFinalPrice(), true, false) ?>
+     <?php endforeach ?>
+</div>

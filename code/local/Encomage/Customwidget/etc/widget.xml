@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<widgets>
+    <encomage_customwidget_lowestproducts type="customwidget/lowestproducts" translate="label description" name="customwidget">
+        <name>Cheapest Products</name>
+        <description>Displays the cheapest products on the website</description>
+        <parameters>
+            <products_per_page translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>5</value>
+                <label>Number of Products per Page</label>
+                <type>text</type>
+            </products_per_page>
+            <sortprice translate="label">
+                <label>Choose an Sort</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <value>Asc</value>
+                <values>
+                    <someoption translate="label">
+                        <label>Asc</label>
+                        <value>asc</value>
+                    </someoption>
+                    <someotheroption translate="label">
+                        <label>Desc</label>
+                        <value>desc</value>
+                    </someotheroption>
+                </values>
+            </sortprice>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>customwidget/block.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>customwidget/block.phtml</value>
+                        <label>Block</label>
+                    </default>
+                    <locale_format translate="label">
+                        <value>customwidget/inline.phtml</value>
+                        <label>Inline</label>
+                    </locale_format>
+                </values>
+            </template>
+        </parameters>
+    </encomage_customwidget_lowestproducts>
+</widgets>

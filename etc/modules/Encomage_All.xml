@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Encomage_Customwidget>
+            <codePool>local</codePool>
+            <active>true</active>
+        </Encomage_Customwidget>
+    </modules>
+</config>
